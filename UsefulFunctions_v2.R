@@ -696,12 +696,6 @@ PQN <- function (X) {
 }
 
 
-#Use
-urinedata=read.csv("C:/Users/Jarrett Eshima/Documents/Research/Spring 2018/Mental Health Clinical Study/Data/Data Processing/Data Files/MentalHealth_MajorityFilterClassifications.csv")
-urinedata=PREP(urinedata)
-nurinedata=PQN(urinedata)
-
-
 ###################################################################################################
 #######################    Plot a matrix as a heatmap using ggplot2    ############################
 ###################################################################################################
