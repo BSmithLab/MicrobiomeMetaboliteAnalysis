@@ -519,7 +519,7 @@ PQN <- function (X) {
 #List of VOC names are expected to be the rownames or provided in the FIRST COLUMN
 #If userownames = T, then VOC names should be present along the rows. If false, the first column is expected to contain VOC names.
 
-FiltSilox = function(data,userownames){
+FiltSilox = function(data,userownames,dioxolanes,oxalics){
   contamindex = rep(NA,nrow(data))
   count = 1
   for(i in 1:nrow(data)){
@@ -536,6 +536,11 @@ FiltSilox = function(data,userownames){
     for(j in 1:ncharVOC-2){
       
       if(substr(VOC,j,j+5) == "Silane" || substr(VOC,j,j+5) == "silane"){
+        contamindex[count] = i
+        count = count+1
+      }
+      
+      if(substr(VOC,j,j+6) == "Silanol" || substr(VOC,j,j+6) == "silanol"){
         contamindex[count] = i
         count = count+1
       }
@@ -558,6 +563,20 @@ FiltSilox = function(data,userownames){
       if(substr(VOC,j,j+4) == "TBDMS"){
         contamindex[count] = i
         count = count+1
+      }
+      
+      if(dioxolanes == T){
+        if(substr(VOC,j,j+8) == "Dioxolane" || substr(VOC,j,j+8) == "dioxolane"){
+          contamindex[count] = i
+          count = count+1
+        }
+      }
+      
+      if(oxalics == T){
+        if(substr(VOC,j,j+5) == "Oxalic" || substr(VOC,j,j+8) == "oxalic"){
+          contamindex[count] = i
+          count = count+1
+        }
       }
       
     }
@@ -1167,3 +1186,4 @@ MatrixtoHeatmap(test,samplesarecols = T,featuresasrows = T,limits = c(-3,3),colo
 MatrixtoHeatmap(test,samplesarecols = T,featuresasrows = T,limits = c(-3,3),colors = c("green","yellow","blue"),rev(customfeats))
 
 #Axis and legend labels should be cleaned up externally (inkscape or Illustrator)
+
