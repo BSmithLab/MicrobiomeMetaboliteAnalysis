@@ -126,7 +126,7 @@ writef = FALSE
 #Minimum integrated peak signal
 minthreshold = 1000000
 
-#Filter before or after coming peaks:
+#Filter before or after combining peaks:
 FilterBefore = T
 
 #Retention time tolerance for aligning samples within an experimental condition (i.e. all positive samples)
@@ -210,12 +210,12 @@ scalebygroup = T #True reflects the original coding in versions 4 and previous
 useIS = F
 
 #If useIS is TRUE:
-IS_Abundance_pos = c(948768,689539,939371)
-IS_Abundance_neg = c(429798,743104,500042)
-IS_Abundance_ctr = c(710291,487295,520791)
+IS_Abundance_pos = c(0,0,0)
+IS_Abundance_neg = c(0,0,0)
+IS_Abundance_ctr = c(0,0,0)
 
 #If the number of conditions = 4:
-IS_Abundance_ex = c(1482435,1363602,1427230)
+#IS_Abundance_ex = c(0,0,0)
 
 #Should you divide through by the abundance of the internal standard peak? If true, each peak abundance is divided by the abundance of the IS.
 divideIS = F
