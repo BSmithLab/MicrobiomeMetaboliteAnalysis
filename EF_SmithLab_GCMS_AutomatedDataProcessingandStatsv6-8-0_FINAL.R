@@ -359,94 +359,94 @@ givemepspace = T
 
 #Barplot Colors:
 poscolor = "coral"
-  negcolor = "deepskyblue2"
-    ctrcolor = "grey60"
-      excolor = "mediumaquamarine" #This is only needed if 4 conditions are provided
-        lowerlim = -1 #manually adjust lower limit
+negcolor = "deepskyblue2"
+ctrcolor = "grey60"
+excolor = "mediumaquamarine" #This is only needed if 4 conditions are provided
+lowerlim = -1 #manually adjust lower limit
         
         
-        ## Heatmap Parameters ##
+## Heatmap Parameters ##
         
-        #Plot the Heatmap?
-        PlotHeatmap = T
+#Plot the Heatmap?
+PlotHeatmap = T
         
-        #Optional arguments (defaults are provided below):
-        heatcolorlow = "deepskyblue2"
-          heatcolormid = "white"
-            heatcolorhigh = "darkorange2"
-              limits = c(-3,3)
-              clusterrows = T
-              clustercols = T
-              clustermethod = "ward.D2"
-              distancemethod = "manhattan"
-              #A custom row/column order can be provided. This will overwrite clustering results if used. 
-              #With 3 groups
-              #customsamps = c("Replicate1_Pos","Replicate2_Pos","Replicate3_Pos","Replicate1_Neg","Replicate2_Neg","Replicate3_Neg","Replicate1_Ctr","Replicate2_Ctr","Replicate3_Ctr") #Column order for plotting, starting with the left side
-              #With 4 groups
-              usecustomsamps = T
-              customsamps = c("Replicate1_Pos","Replicate2_Pos","Replicate3_Pos","Replicate1_Ext","Replicate2_Ext","Replicate3_Ext","Replicate1_Neg","Replicate2_Neg","Replicate3_Neg","Replicate1_Ctr","Replicate2_Ctr","Replicate3_Ctr") #Column order for plotting with 4 conditions, starting with the left side
-              #customsamps = c("Pos1","Pos2","Pos3","Inhib1","Inhib2","Inhib3","Neg1","Neg2","Neg3","Ctr1","Ctr2","Ctr3")
-              usecustomfeats = F
-              customfeats = c("VOC1","VOC2","VOC3","etc.") #This pipes well into external clustering methods, although the updated code 
+#Optional arguments (defaults are provided below):
+heatcolorlow = "deepskyblue2"
+heatcolormid = "white"
+heatcolorhigh = "darkorange2"
+limits = c(-3,3)
+clusterrows = T
+clustercols = T
+clustermethod = "ward.D2"
+distancemethod = "manhattan"
+#A custom row/column order can be provided. This will overwrite clustering results if used. 
+#With 3 groups
+#customsamps = c("Replicate1_Pos","Replicate2_Pos","Replicate3_Pos","Replicate1_Neg","Replicate2_Neg","Replicate3_Neg","Replicate1_Ctr","Replicate2_Ctr","Replicate3_Ctr") #Column order for plotting, starting with the left side
+#With 4 groups
+usecustomsamps = T
+customsamps = c("Replicate1_Pos","Replicate2_Pos","Replicate3_Pos","Replicate1_Ext","Replicate2_Ext","Replicate3_Ext","Replicate1_Neg","Replicate2_Neg","Replicate3_Neg","Replicate1_Ctr","Replicate2_Ctr","Replicate3_Ctr") #Column order for plotting with 4 conditions, starting with the left side
+#customsamps = c("Pos1","Pos2","Pos3","Inhib1","Inhib2","Inhib3","Neg1","Neg2","Neg3","Ctr1","Ctr2","Ctr3")
+usecustomfeats = F
+customfeats = c("VOC1","VOC2","VOC3","etc.") #This pipes well into external clustering methods, although the updated code 
               
-              #Adjust z-score values greater than 3 to 3 and less than -3 to -3 (for plotting purposes)
-              maxz3 = T
+#Adjust z-score values greater than 3 to 3 and less than -3 to -3 (for plotting purposes)
+maxz3 = T
               
-              #Defaults:
-              # customsamps = c("Replicate1_Pos","Replicate2_Pos","Replicate3_Pos","Replicate1_Neg","Replicate2_Neg","Replicate3_Neg","Replicate1_Ctr","Replicate2_Ctr","Replicate3_Ctr") #Column order for plotting, starting with the left side
-              # customsamps = c("Replicate1_Pos","Replicate2_Pos","Replicate3_Pos","Replicate1_Ext","Replicate2_Ext","Replicate3_Ext","Replicate1_Neg","Replicate2_Neg","Replicate3_Neg","Replicate1_Ctr","Replicate2_Ctr","Replicate3_Ctr") #Column order for plotting with 4 conditions, starting with the left side
-              # heatcolorlow = "blue"
-              # heatcolormid = "white"
-              # heatcolorhigh = "red"
-              # limits = c(-3,3)
-              # clusterrows = F
-              # clustercols = F
-              # clustermethod = "ward.D"
-              # distancemethod = "euclidean"
+#Defaults:
+# customsamps = c("Replicate1_Pos","Replicate2_Pos","Replicate3_Pos","Replicate1_Neg","Replicate2_Neg","Replicate3_Neg","Replicate1_Ctr","Replicate2_Ctr","Replicate3_Ctr") #Column order for plotting, starting with the left side
+# customsamps = c("Replicate1_Pos","Replicate2_Pos","Replicate3_Pos","Replicate1_Ext","Replicate2_Ext","Replicate3_Ext","Replicate1_Neg","Replicate2_Neg","Replicate3_Neg","Replicate1_Ctr","Replicate2_Ctr","Replicate3_Ctr") #Column order for plotting with 4 conditions, starting with the left side
+# heatcolorlow = "blue"
+# heatcolormid = "white"
+# heatcolorhigh = "red"
+# limits = c(-3,3)
+# clusterrows = F
+# clustercols = F
+# clustermethod = "ward.D"
+# distancemethod = "euclidean"
               
               
-              ## Principal Component Analysis ##
-              RunPCA = T
+## Principal Component Analysis ##
+RunPCA = T
               
-              #Which principal components do you want to plot? Typically, the first and second components capture the greatest amount of variability in your data.
-              comp1 = 1
-              comp2 = 2
+#Which principal components do you want to plot? Typically, the first and second components capture the greatest amount of variability in your data.
+comp1 = 1
+comp2 = 2
               
-              #Plot 3-axis (3D) PCA?
-              pca3d = F
-              #If TRUE:
-              comp3 = 3
+#Plot 3-axis (3D) PCA?
+pca3d = F
+#If TRUE:
+comp3 = 3
               
-              #Colors for plotting groups?
-              pcacolorpos = "coral"
-                pcacolorneg = "deepskyblue"
-                  pcacolorctr = "grey60"
-                    pcacolorex = "mediumaquamarine" #This is only needed if 4 conditions are provided
+#Colors for plotting groups?
+pcacolorpos = "coral"
+pcacolorneg = "deepskyblue"
+pcacolorctr = "grey60"
+pcacolorex = "mediumaquamarine" #This is only needed if 4 conditions are provided
                       
                     
                     
-                    ## Analysis of Functional Groups ##
+## Analysis of Functional Groups ##
                     
-                    library(grDevices)
+library(grDevices)
                     
-                    #Should the VOC functional groups be assessed and plotted as a pie chart?
-                    AnalyzeFunctionalGroups = T
+#Should the VOC functional groups be assessed and plotted as a pie chart?
+AnalyzeFunctionalGroups = T
                     
-                    #If TRUE,
-                    #Should VOCs with an ambiguous functional group (using substring searching) be assigned as unknown? If yes, set the variable below to TRUE
-                    flagambiguous = F
+#If TRUE,
+#Should VOCs with an ambiguous functional group (using substring searching) be assigned as unknown? If yes, set the variable below to TRUE
+flagambiguous = F
                     
-                    #If TRUE,
-                    #Do you want to overwrite the functional group names assigned? 
-                    customFGlist = F
+#If TRUE,
+#Do you want to overwrite the functional group names assigned? 
+customFGlist = F
                     
-                    #IMPORTANT: Specify the functional group names below as a list. You MUST provide a list that is equal to the number of unique funtional groups. You can check this easily after running the code once with: length(names(table(FunctionalGroups(rownames(data)))))
-                    FGlabels = c("aromatic hydrocarbon","nitrogenated ring","etc.","etc.")
+#IMPORTANT: Specify the functional group names below as a list. You MUST provide a list that is equal to the number of unique funtional groups. You can check this easily after running the code once with: length(names(table(FunctionalGroups(rownames(data)))))
+FGlabels = c("aromatic hydrocarbon","nitrogenated ring","etc.","etc.")
                     
-                    #Colors for the piechart
-                    color1 = "deepskyblue1"
-                      color2 = "coral"
-                        piecolorfnc = colorRampPalette(c(color1,color2))
+#Colors for the piechart
+color1 = "deepskyblue1"
+color2 = "coral"
+piecolorfnc = colorRampPalette(c(color1,color2))
 
 ########################################  PREP FOR META ANALYSIS  ######################################################
 
@@ -476,7 +476,7 @@ npeaks = rep(NA,length(files))
 for(i in 1:length(files)){
   
   tmpname = paste(files[i])
-  tmp = read.csv(files[i])[-1:-7,]
+  tmp = read.csv(files[i])[-1:-4,]
   colnames(tmp) = tmp[1,]
   tmp = tmp[-1,]
   assign(tmpname,tmp)
