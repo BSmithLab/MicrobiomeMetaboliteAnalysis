@@ -471,7 +471,7 @@ npeaks = rep(NA,length(files))
 for(i in 1:length(files)){
   
   tmpname = paste(files[i])
-  tmp = read.csv(files[i])[-1:-7,]
+  tmp = read.csv(files[i])[-1:-4,]
   colnames(tmp) = tmp[1,]
   tmp = tmp[-1,]
   assign(tmpname,tmp)
