@@ -352,27 +352,27 @@ givemepspace = T
 
 #Barplot Colors:
 poscolor = "coral"
-  negcolor = "deepskyblue2"
-    ctrcolor = "grey60"
-      excolor = "mediumaquamarine" #This is only needed if 4 conditions are provided
-        lowerlim = -1 #manually adjust lower limit
+negcolor = "deepskyblue2"
+ctrcolor = "grey60"
+excolor = "mediumaquamarine" #This is only needed if 4 conditions are provided
+lowerlim = -1 #manually adjust lower limit
         
         
-        ## Heatmap Parameters ##
+## Heatmap Parameters ##
         
-        #Plot the Heatmap?
-        PlotHeatmap = T
+#Plot the Heatmap?
+PlotHeatmap = T
         
-        #Optional arguments (defaults are provided below):
-        heatcolorlow = "deepskyblue2"
-          heatcolormid = "white"
-            heatcolorhigh = "darkorange2"
-              limits = c(-3,3)
-              clusterrows = T
-              clustercols = T
-              clustermethod = "ward.D2"
-              distancemethod = "manhattan"
-              #A custom row/column order can be provided. This will overwrite clustering results if used. 
+#Optional arguments (defaults are provided below):
+heatcolorlow = "deepskyblue2"
+heatcolormid = "white"
+heatcolorhigh = "darkorange2"
+limits = c(-3,3)
+clusterrows = T
+clustercols = T
+clustermethod = "ward.D2"
+distancemethod = "manhattan"
+#A custom row/column order can be provided. This will overwrite clustering results if used. 
               #With 3 groups
               #customsamps = c("Replicate1_Pos","Replicate2_Pos","Replicate3_Pos","Replicate1_Neg","Replicate2_Neg","Replicate3_Neg","Replicate1_Ctr","Replicate2_Ctr","Replicate3_Ctr") #Column order for plotting, starting with the left side
               #With 4 groups
@@ -469,7 +469,7 @@ npeaks = rep(NA,length(files))
 for(i in 1:length(files)){
   
   tmpname = paste(files[i])
-  tmp = read.csv(files[i])[-1:-7,]
+  tmp = read.csv(files[i])[-1:-4,]
   colnames(tmp) = tmp[1,]
   tmp = tmp[-1,]
   assign(tmpname,tmp)
