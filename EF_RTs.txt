@@ -1,0 +1,15 @@
+VOC,Start,Stop
+Benzaldehyde ,5.365,6
+"4,6-Dimethylpyrimidine",4.891,4.896
+"2,6-Dimethylpyrazine",4.489,4.496
+"2,5-Dimethylpyrazine",4.414,4.45
+Methylpyrazine,3.15,3.33
+Benzenetacealdehyde,7.18,7.3
+Acetophenone,7.72,7.83
+4-Hydroxy-3-methylbenzaldehyde,7.98,8.09
+3-Methylbenzaldehyde,8.1,8.23
+Dodecane,9.79,9.86
+Tetradecane,11.34,11.4
+"Phenol, 2,4-bis(1,1-dimethylethyl)",11.97,12.02
+sec-Butylamine,1.944,2.01
+EF Analyte 1,2.18,2.22

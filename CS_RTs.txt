@@ -1,0 +1,38 @@
+VOC,Start,Stop
+Analyte 1,1.43,1.52
+sec-Butylamine,1.933,2.024
+Analyte 7,2.339,2.364
+Analyte 8,2.62,2.675
+4-Methyl-1-pentanol,3.227,3.313
+"2,5-Dimethylpyrazine",4.4,4.47
+Benzaldehyde,5.38,5.985
+"Butanoic acid, butyl ester",6,6.1
+Trimethylpyrazine,6.19,6.245
+Butyl 2-methylbutanoate,6.981,7.13
+"Butanoic acid, 3-methyl-, butyl ester",7.15,7.24
+"Pentanoic acid, butyl ester",7.4,7.46
+Acetophenone,7.73,7.83
+"Butanoic acid, pentyl ester",8.28,8.355
+"Butanoic acid, 2-methyl-, 3-methylbutyl ester",8.44,8.471
+"Butanoic acid, 3-methyl-, 3-methylbutyl ester",8.54,8.56
+n-Amyl isovalerate,8.6,8.615
+Phenylethyl alcohol,8.73,8.77
+Benzyl nitrile,9.144,9.19
+"Hexanoic acid, 3-methylpropyl ester",9.318,9.343
+Dodecane,9.79,9.86
+Hexyl n-valerate,9.89,9.91
+Isopentyl hexanoate,9.98,10.02
+Benzenepropanol,10.164,10.21
+"Hexanoic acid, pentyl ester",10.323,10.343
+Analyte 9,10.81,10.83
+Analyte 10,11.065,11.11
+Tetradecane,11.35,11.38
+Phenethyl butyrate,11.596,11.61
+"Benzeneacetic acid, butyl ester",11.635,11.655
+"Butanoic acid, 3-methyl-, 2-phenylethyl ester",11.89,11.915
+"Phenol, 2-4-bis(1,1-dimethylethyl)",11.978,12.023
+Analyte 11,12.085,12.103
+2-Methylpropyl benzenepropanoate,12.16,12.18
+"Butanoic acid, 3-phenylpropyl ester",12.22,12.25
+Hexadecane,12.348,12.36
+"Pivalic acid, 2-phenylethyl ester",12.43,12.45
